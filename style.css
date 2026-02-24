@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f3f4f6;  
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #111827;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+p {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #6b7280;   
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+input[type=text], select, input[type=number], input[type=email] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #374151;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    accent-color: #2563eb;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    width: 100%;
+    background: #2563eb;
+    color: white;
+    padding: 14px;
+    border-radius: 6px;
+    border: none;;
+    transition: 0.3s ease;
+    font-size: 1rem;
+    margin-top: 13px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background: #1e40af;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 6px;
+    margin-bottom: 10px;
+}
+
+.option label {
+    margin: 0;             
+    font-size: 1rem;        
+}
+
+input, select {
+    transition: 0.2s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 1px solid #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="submitted.html" method="get">
+        <div class="container">
+            <h1>Fill Out Survey</h1>
+            <p><i>Please fill out all fields below.</i></p>
+
+            <label for="fname"><b>First Name</b></label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname"><b>Last Name</b></label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="age"><b>Age</b></label>
+            <select name="age" id="age">
+                <option value="18-25">18-25</option>
+                <option value="26-35">26-35</option>
+                <option value="36-45">36-45</option>
+                <option value="46+">46+</option>
+            </select>
+
+            <label for="japan"><b>What is the capital of Japan?</b></label>
+            <div class="option">
+                <input type="radio" id="Beijing" name="capital" value="Beijing">
+                <label for="Beijing">Beijing</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="Seoul" name="capital" value="Seoul">
+                <label for="Seoul">Seoul</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="NewDelhi" name="capital" value="NewDelhi">
+                <label for="NewDelhi">New Delhi</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="Tokyo" name="capital" value="Tokyo">
+                <label for="Tokyo">Tokyo</label>
+            </div>
+    
+            <label for="proglanguage"><b>Which of the following are programming languages?</b></label>  
+            <div class="option">
+                <input type="checkbox" id="Python" name="proglanguage" value="Python">
+                <label for="Python">Python</label>
+                <input type="checkbox" id="HTML" name="proglanguage" value="HTML">
+                <label for="HTML">HTML</label>
+                <input type="checkbox" id="JavaScript" name="proglanguage" value="JavaScript"   >
+                <label for="JavaScript">JavaScript</label>
+                <input type="checkbox" id="CSS" name="proglanguage" value="CSS" >
+                <label for="CSS">CSS</label>
+            </div>
+
+            <label for="que3"><b>What is 12 × 8?</b></label>
+            <input type="number" id="que3" name="que3">
+
+            <label for="que4"><b>Which planet is known as the Red Planet?</b></label>
+            <select name="que4" id="que4">
+                <option value="Earth">Earth</option>
+                <option value="Mars">Mars</option>
+                <option value="Jupiter">Jupiter</option>
+                <option value="Venus">Venus</option>
+            </select>
+
+            <label for="que5"><b>Which of these are renewable energy sources?</b></label>
+            <div class="option">
+                <input type="checkbox" id="Solar" name="que5" value="Solar" >
+                <label for="Solar">Solar</label>
+                <input type="checkbox" id="Wind" name="que5" value="Wind" >
+                <label for="Wind">Wind</label>
+                <input type="checkbox" id="Coal" name="que5" value="Coal" >
+                <label for="Coal">Coal</label>
+                <input type="checkbox" id="Hydro" name="que5" value="Hydro" >
+                <label for="Hydro">Hydropower</label>
+            </div>
+                
+
+            <label for="que6"><b>Who wrote “Romeo and Juliet”?</b></label>
+            <input type="text" id="que6" name="que6" >
+
+            <label for="que7"><b>What is the chemical symbol for Gold?</b></label>
+            <div class="option">
+                <input type="radio" id="Au" name="que7" value="Au" >
+                <label for="Au">Au</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="Ag" name="que7" value="Ag" >
+                <label for="Ag">Ag</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="Fe" name="que7" value="Fe" >
+                <label for="Fe">Fe</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="Hg" name="que7" value="Hg" >
+                <label for="Hg">Hg</label>
+            </div>
+
+            <label for="que8"><b>Which animals are mammals?</b></label>
+            <div class="option">
+                <input type="checkbox" id="Dog" name="que8" value="Dog" >
+                <label for="Dog">Dog</label>
+                <input type="checkbox" id="Cat" name="que8" value="Cat" >
+                <label for="Cat">Cat</label>
+                <input type="checkbox" id="Shark" name="que8" value="Shark" >
+                <label for="Shark">Shark</label>
+                <input type="checkbox" id="Dolphin" name="que8" value="Dolphin">
+                <label for="Dolphin">Dolphin</label>
+            </div>
+                
+
+            <label for="que9"><b>In which year did World War II end?</b></label>
+            <input type="number" id="que9" name="que9" >
+
+            <label for="que10"><b>What is the largest ocean on Earth?</b></label>
+            <select name="que10" id="que10">
+                <option value="Atlantic">Atlantic Ocean</option>
+                <option value="Indian">Indian Ocean</option>
+                <option value="Arctic">Arctic Ocean</option>
+                <option value="Pacific">Pacific Ocean</option>
+            </select>
+
+            <label for="que11"><b>Which of the following are prime numbers?</b></label>
+            <div class="option">
+                <input type="checkbox" id="29" name="que11" value="29" >
+                <label for="29">29</label>
+                <input type="checkbox" id="51" name="que11" value="51" >
+                <label for="51">51</label>
+                <input type="checkbox" id="97" name="que11" value="97" >
+                <label for="97">97</label>
+                <input type="checkbox" id="121" name="que11" value="121" >
+                <label for="121">121</label>
+            </div>
+                
+            <label for="que12"><b>Which city is located on two continents?</b></label>
+            <div class="option">
+                <input type="radio" id="Istanbul" name="que12" value="Istanbul" >
+                <label for="Istanbul">Istanbul</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="Cairo" name="que12" value="Cairo" >
+                <label for="Cairo">Cairo</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="moscow" name="que12" value="Moscow" >
+                <label for="moscow">Moscow</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="Athens" name="que12" value="Athens" >
+                <label for="Athens">Athens</label>
+            </div>
+
+            <label for="que13"><b>What is the time complexity of binary search in Big-O notation?</b></label>
+            <input type="text" id="que13" name="que13" >
+
+            <label for="que14"><b>In what year did the Berlin Wall fall?</b></label>
+            <input type="number" id="que14" name="que14" >
+
+            <label for="que15"><b>What is the capital city of Nigeria?</b></label>
+            <select name="que15" id="que15" >
+                <option value="Kano">Kano</option>
+                <option value="Abuja">Abuja</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Port Harcourt">Port Harcourt</option>
+            </select>
+
+            <label for="que16"><b>In what year did Nigeria gain independence?</b></label>
+            <input type="number" id="que16" name="que16" >
+
+            <input type="submit" value="SUBMIT">
+        </div>
+    </form>
+</body>
+</html>
